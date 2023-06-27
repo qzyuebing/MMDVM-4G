@@ -1,0 +1,38 @@
+
+config system
+	option ttylogin '0'
+	option log_size '64'
+	option urandom_seed '0'
+	option compat_version '1.0'
+	option timezone 'CST-8'
+	option zonename 'Asia/Shanghai'
+	option log_proto 'udp'
+	option conloglevel '8'
+	option cronloglevel '5'
+	option hostname 'MMDVM-4G'
+	option description 'MT7688 MMDVM 4G'
+	option notes 'MMDVM 4G路由便携热点感谢BD7MQB老师的源码'
+
+config timeserver 'ntp'
+	list server 'ntp.tencent.com'
+	list server 'ntp1.aliyun.com'
+	list server 'ntp.ntsc.ac.cn'
+	list server 'cn.ntp.org.cn'
+
+config led 'led_wlan'
+	option sysfs 'green:wlan'
+	option trigger 'netdev'
+	option dev 'eth1'
+	list mode 'link'
+	list mode 'tx'
+	list mode 'rx'
+	option name '4G'
+
+config led
+	option name 'Wifi'
+	option sysfs 'green:wlan'
+	option trigger 'netdev'
+	option dev 'wlan0'
+	list mode 'link'
+	list mode 'rx'
+
