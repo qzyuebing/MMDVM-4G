@@ -20,11 +20,6 @@ config interface 'lan'
 	option ip6assign '60'
 	option ipaddr '192.168.8.1'
 
-config interface 'wan'
-	option proto 'dhcp'
-	option device 'eth1'
-	option metric '101'
-
 config switch
 	option name 'switch0'
 	option reset '1'
@@ -40,11 +35,8 @@ config switch_vlan
 	option vlan '2'
 	option ports '0 6t'
 
-config interface 'trm_wwan'
+config interface 'wan_4g'
 	option proto 'dhcp'
-	option metric '100'
-
-config interface 'trm_wwan6'
-	option device '@trm_wwan'
-	option proto 'dhcpv6'
+	option device 'eth1'
+	option hostname '*'
 

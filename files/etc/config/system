@@ -19,20 +19,17 @@ config timeserver 'ntp'
 	list server 'ntp.ntsc.ac.cn'
 	list server 'cn.ntp.org.cn'
 
-config led 'led_wlan'
+config led
+	option name '4G'
 	option sysfs 'green:wlan'
 	option trigger 'netdev'
 	option dev 'eth1'
 	list mode 'link'
 	list mode 'tx'
 	list mode 'rx'
-	option name '4G'
 
-config led
-	option name 'Wifi'
-	option sysfs 'green:wlan'
-	option trigger 'netdev'
-	option dev 'wlan0'
-	list mode 'link'
-	list mode 'rx'
+config imm_init
+	option lang '1'
+	option system_chn '1'
+	option opkg_mirror 'https://mirrors.vsean.net/openwrt'
 

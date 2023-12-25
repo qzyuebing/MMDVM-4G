@@ -20,9 +20,7 @@ config zone
 	option mtu_fix '1'
 	option input 'ACCEPT'
 	option forward 'ACCEPT'
-	list network 'wan'
-	list network 'trm_wwan'
-	list network 'trm_wwan6'
+	list network 'wan_4g'
 
 config forwarding
 	option src 'lan'
@@ -141,10 +139,5 @@ config include 'passwall'
 config include 'passwall_server'
 	option type 'script'
 	option path '/var/etc/passwall_server.include'
-	option reload '1'
-
-config include 'zerotier'
-	option type 'script'
-	option path '/etc/zerotier.reload'
 	option reload '1'
 
