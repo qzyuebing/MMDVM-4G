@@ -46,8 +46,8 @@ config mmdvmhost 'NXDN_Network'
 
 config mmdvmhost 'DMR_Network'
 	option Enable '1'
-	option Address '5021.master.brandmeister.network'
 	option Password '534840997a'
+	option Address '4601.master.brandmeister.network'
 
 config mmdvmhost 'Info'
 	option Power '1'
