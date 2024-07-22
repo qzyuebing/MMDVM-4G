@@ -17,4 +17,4 @@ else
 end
 
 luciname    = "业余无线电数字热点"
-luciversion = "MMDVM 23.093"
+luciversion = "MMDVM"
