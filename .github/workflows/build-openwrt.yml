@@ -20,10 +20,10 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/qzyuebing/ostar
-  REPO_BRANCH: openwrt-21.02
+  REPO_URL: https://github.com/qzyuebing/openwrt-lienol
+  REPO_BRANCH: 22.02
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: .config
+  CONFIG_FILE: lie.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
