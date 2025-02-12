@@ -10,8 +10,8 @@ config system
 	option conloglevel '8'
 	option cronloglevel '5'
 	option description 'MT7688 MMDVM 4G'
-	option hostname 'BI4PCS'
 	option notes 'MMDVM 4G路由便携热点'
+	option hostname 'MMDVM_4G'
 
 config timeserver 'ntp'
 	list server 'ntp.tencent.com'
